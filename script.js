@@ -14,7 +14,7 @@ function typeWriter(elementClass, text, speed){
         } 
     }  
 }
-
-typeWriter("typing1", "Kanav Agarwal", 200)
-setTimeout(function(){typeWriter("typing2", "Programmer and Web Developer", 200)}, 2700)
-setTimeout(function(){typeWriter("typing3", "View my work", 200)}, 8300)
+let timePerChar = 175
+typeWriter("typing1", "Kanav Agarwal", timePerChar)
+setTimeout(function(){typeWriter("typing2", "Programmer and Web Developer", timePerChar)}, 13 * timePerChar)
+setTimeout(function(){typeWriter("typing3", "View my work", timePerChar)}, (13 + 28) * timePerChar)
