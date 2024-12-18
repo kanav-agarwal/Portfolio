@@ -53,9 +53,19 @@ nav a{
     font-size: 3rem;
 }
 
-.main>h3{
+.main>a{
     font-size: 2rem;
     line-height: 3rem;
+    text-decoration: none;
+}
+
+.cursor{
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-color: black;
+    margin-left: 2px;
+    visibility: hidden;
 }
 
 .page-title{
@@ -67,7 +77,6 @@ nav a{
 .projects{
     padding: 1rem;
     margin: 0 5%;
-    /* margin: 1rem 10% 1rem; */
     display: flex;
     justify-content: space-evenly;
     align-content: space-between;
