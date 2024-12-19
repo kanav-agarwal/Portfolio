@@ -131,15 +131,23 @@ form>h2{
 }
 
 label{
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.75em;
     font-size: 1.5em;
+    display: block;
 }
 
 input{
-    display: block;
     width: 100%;
     border-color: white;
     height: 2em;
+    padding: 1em;
+}
+
+textarea{
+    width: 100%;
+    height: 20%;
+    border-color: white;
     padding: 1em;
 }
 
@@ -158,6 +166,10 @@ input{
     .contact>iframe{
         border: none;
         padding: 0;
+
+        padding-bottom: 1em;
+        border-bottom: 5px solid #008000;
+
         width: 100%;
     }
 }
