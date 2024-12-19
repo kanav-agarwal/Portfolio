@@ -26,7 +26,6 @@ header>img{
 nav{
     display: flex;
     margin: 1rem;
-    
 }
 
 nav>li{
@@ -51,20 +50,15 @@ nav a{
 
 .main>h2{
     font-size: 3rem;
+    line-height: 6rem;
 }
 
 .main>a{
     font-size: 2rem;
-    line-height: 3rem;
     text-decoration: none;
 }
 
 .cursor{
-    display: inline-block;
-    width: 10px;
-    height: 20px;
-    background-color: black;
-    margin-left: 2px;
     visibility: hidden;
 }
 
@@ -79,14 +73,14 @@ nav a{
     margin: 0 5%;
     display: flex;
     justify-content: space-evenly;
-    align-content: space-between;
+    align-content: space-around;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
 .project{
     text-align: center;
-    width: 30%;
+    width: 25em;
     padding: 1rem;
     border-radius: 1rem;
     background-color: rgb(30, 30, 30);
@@ -103,11 +97,67 @@ nav a{
     border-radius: 0.5rem; 
 }
 
-iframe{
+.resume{
+    margin: 0 25%;
+}
+
+.resume>iframe{
     width: 100%;
     height: 75vh;
 }
 
-.resume{
-    margin: 0 25%;
+.contact{
+    display: flex;
+    padding: 5%;
+    flex-wrap: wrap;
+}
+
+.contact>iframe{
+    width: 50%;
+    height: 25em;
+    padding-right: 1em;
+    border: none;
+    border-right: 5px solid #008000;
+}
+
+form{
+    width: 50%;
+    padding: 1em;
+}
+
+form>h2{
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+label{
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+input{
+    display: block;
+    width: 100%;
+    border-color: white;
+    height: 2em;
+    padding: 1em;
+}
+
+@media (max-width: 640px) {
+    nav{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+    }
+
+    .contact>*{
+        width: 100%;
+    }
+
+    .contact>iframe{
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
 }

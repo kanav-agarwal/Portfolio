@@ -25,6 +25,6 @@ function typeWriter(elementId, cursorId, text, speed){
 
 
 let timePerChar = 175
-setTimeOut(function(){typeWriter("typing1", "cursor1", "Kanav Agarwal", timePerChar)}, 0)
+setTimeout(function(){typeWriter("typing1", "cursor1", "Kanav Agarwal", timePerChar)}, 1)
 setTimeout(function(){typeWriter("typing2", "cursor2", "Programmer and Web Developer", timePerChar)}, 13 * timePerChar)
 setTimeout(function(){typeWriter("typing3", "cursor3", "View my work", timePerChar)}, (13 + 28) * timePerChar)
