@@ -108,7 +108,7 @@ nav a{
 
 .contact{
     display: flex;
-    padding: 5%;
+    padding: 2% 5% 0% 5%;
     flex-wrap: wrap;
 }
 
@@ -122,12 +122,13 @@ nav a{
 
 form{
     width: 50%;
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em ;
 }
 
 form>h2{
+    font-size: 2em;
     text-align: center;
-    padding-bottom: 0.5em;
 }
 
 label{
@@ -151,10 +152,25 @@ textarea{
     padding: 1em;
 }
 
+#name-label{
+    margin-top: 0;
+}
+
+#submit{
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0.5em auto;
+    text-align: center;
+    font-size: 1.25em;
+    padding: 0.2em;
+}
+
 @media (max-width: 640px) {
     nav{
         flex-direction: column;
     }
+
     .contact{
         flex-direction: column;
     }
@@ -166,10 +182,9 @@ textarea{
     .contact>iframe{
         border: none;
         padding: 0;
-
         padding-bottom: 1em;
         border-bottom: 5px solid #008000;
-
+        margin-bottom: 1em;
         width: 100%;
     }
 }
